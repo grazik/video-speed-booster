@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Video Speed Booster",
+  "version": "1.0",
+  "description": "Increase video playback speed to 16x with a keyboard shortcut",
+  "permissions": ["scripting", "activeTab"],
+  "action": {},
+  "commands": {
+    "speed-up-video": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Z",
+        "mac": "Command+Shift+Z"
+      },
+      "description": "Increase video playback speed to 16x"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
